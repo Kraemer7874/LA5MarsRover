@@ -8,7 +8,7 @@ public class LA5Main {
 	public static void main(String[] args) {
 		
 		MainWindow.startGUI();
-		System.out.println("Hello");
+		System.out.println("All I do is win win win no matta what");
 	}
 
 }
