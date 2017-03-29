@@ -14,8 +14,7 @@ public class Literal implements IExpression{
 
 	@Override
 	public int getValue() {
-		// TODO Auto-generated method stub
-		return 0;
+		return value;
 	}
 
 }

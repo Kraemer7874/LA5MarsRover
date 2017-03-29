@@ -4,8 +4,7 @@ public class Addition implements IOperation{
 
 	@Override
 	public int perform(IExpression left, IExpression right) {
-		// TODO Auto-generated method stub
-		return 0;
+		return left.getValue() + right.getValue();
 	}
 
 }
