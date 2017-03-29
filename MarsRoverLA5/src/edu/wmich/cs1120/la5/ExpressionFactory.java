@@ -4,6 +4,7 @@ public class ExpressionFactory {
 	// This method will create and return a proper object
 	//according to the arguments received
 	public static IExpression getExpression(char operator, int val1, int val2) {
+		
 		return null;
 	// fill your code here
 	}
