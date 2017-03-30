@@ -23,7 +23,7 @@ public class ElevationAnalyzer implements IRover {
 	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
-
+		this.path = path;
 	}
 
 	/**
