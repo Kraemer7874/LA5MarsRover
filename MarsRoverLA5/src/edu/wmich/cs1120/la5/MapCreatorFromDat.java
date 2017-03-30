@@ -42,6 +42,7 @@ public class MapCreatorFromDat implements IMapCreator{
 		scanner = new TerrainScanner();
 		scanner.setTerrain(terrain);
 		
+		inputFile.close();
 	}
 
 	@Override

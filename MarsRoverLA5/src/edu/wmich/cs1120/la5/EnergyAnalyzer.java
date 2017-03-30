@@ -36,7 +36,7 @@ public class EnergyAnalyzer implements IRover {
 		for(int i=0;i<path.size();i++){
 			total=total+path.get(i).calcConsumedEnergy();
 		}
-		analysis = "Total Energy: "+total;
+		this.analysis = "Total Energy: "+total;
 	}
 
 	/**

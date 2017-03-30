@@ -39,7 +39,7 @@ public class ElevationAnalyzer implements IRover {
 			total=total+path.get(i).getElevation();
 		}
 		avg = total/(i+1);
-		analysis="Average Elevation: "+ avg;
+		this.analysis ="Average Elevation: "+ avg;
 	}
 
 	/**
