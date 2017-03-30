@@ -20,15 +20,13 @@ public class MapCreatorFromDat implements IMapCreator{
 		double elevation;
 		double radiation;
 		int point = 0;
-		//int row = 0;
-		//int col = 0;
+		int row = 0;
+		int col = 0;
 		int left = 0;
 		int right = 0;
 		char op = 'a';
 		
-		
-		for(int row = 0; row < 10; row++){
-			for(int col = 0; col < 10; col++){
+		do{
 			inputFile.seek(point * (3 * Double.BYTES + 1 * Character.BYTES + 2 * Integer.BYTES));
 			basicEnergyCost = inputFile.readDouble();
 			elevation = inputFile.readDouble();
@@ -39,10 +37,12 @@ public class MapCreatorFromDat implements IMapCreator{
 			terrain[row][col] = new Area(basicEnergyCost, elevation, radiation, threshold);
 			IExpression num = ExpressionFactory.getExpression(op, left, right);
 			point = num.getValue();
-			
+			if(col == 9){
+				col = 0;
+				row++;
 			}
-		}
-	
+			else{col++;}
+		}while(point != -1);
 		scanner = new TerrainScanner();
 		scanner.setTerrain(terrain);
 		
