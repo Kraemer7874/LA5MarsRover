@@ -32,9 +32,11 @@ public class EnergyAnalyzer implements IRover {
 	@Override
 	public void analyzePath() {
 		path=getPath();
+		double total=0;
 		for(int i=0;i<path.size();i++){
-			analysis=analysis+path.get(i).calcConsumedEnergy();
+			total=total+path.get(i).calcConsumedEnergy();
 		}
+		analysis = "Total Energy: "+total;
 	}
 
 	/**
