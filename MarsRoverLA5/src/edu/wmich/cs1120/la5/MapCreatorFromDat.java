@@ -13,6 +13,7 @@ public class MapCreatorFromDat implements IMapCreator{
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 		FileInputStream fstream = new FileInputStream(fileName);
 		DataInputStream inputFile = new DataInputStream(fstream);
+		
 		Area[][] terrain = new Area[10][10];
 		double basicEnergyCost;
 		double elevation;
