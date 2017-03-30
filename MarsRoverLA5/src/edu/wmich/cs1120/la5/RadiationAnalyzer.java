@@ -23,7 +23,7 @@ public class RadiationAnalyzer implements IRover {
 	 */
 	@Override
 	public void setPath(ArrayList<IArea> path) {
-
+		this.path = path;
 	}
 
 	/**
@@ -31,7 +31,10 @@ public class RadiationAnalyzer implements IRover {
 	 */
 	@Override
 	public void analyzePath() {
-
+		path=getPath();
+		for(int i=0;i<path.size();i++){
+			analysis=analysis+path.get(i);
+		}
 	}
 
 	/**
