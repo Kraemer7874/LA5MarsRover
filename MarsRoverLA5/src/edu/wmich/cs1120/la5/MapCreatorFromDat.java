@@ -1,11 +1,7 @@
 package edu.wmich.cs1120.la5;
 
-import java.io.DataInputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.util.Scanner;
-import edu.wmich.cs1120.la5.gui.MainWindow;
 import edu.wmich.cs1120.la5.TerrainScanner;
 
 public class MapCreatorFromDat implements IMapCreator{
